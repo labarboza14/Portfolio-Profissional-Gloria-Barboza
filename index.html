@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glória Barboza — Portfólio | Tecnologia, Projetos & Dados</title>
+  <meta name="description" content="Portfólio profissional de Glória Barboza — Gestão de Projetos de Tecnologia, Product/Tech Operations e Dados. Coorganizadora Python Floripa, palestrante no TDC e integrante da 1ª edição no Brasil do Programa de Embaixadores Estudantis do Google (2026)." />
+  <meta name="author" content="Glória Barboza" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Glória Barboza — Tecnologia, Projetos & Dados" />
+  <meta property="og:description" content="Cases reais de resolução de problemas, indicadores executivos, pipelines de dados com LGPD e palestras em eventos como TDC, Python Sul e FLISOL." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Glória Barboza — Tecnologia, Projetos & Dados" />
+  <meta name="twitter:description" content="Cases reais em tecnologia, gestão de projetos, dados e atuação em comunidades tech." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Glória Barboza",
+    "jobTitle": "Tecnologia, Gestão de Projetos e Dados",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "email": "mailto:gloriarbarboza@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/gloriabarboza",
+      "https://github.com/labarboza14",
+      "https://thedevconf.com/palestrante/gloriamariabarboza"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#FDF2F8',
+              100: '#FCE7F3',
+              200: '#FBCFE8',
+              500: '#DB2777',
+              600: '#BE185D',
+              700: '#9D174D',
+            },
+            plum: {
+              900: '#26172E',
+              800: '#3D2947',
+              600: '#64546E',
+              400: '#9A8BA3',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #FDFBFC;
+      color: #26172E;
+      overflow-x: hidden;
+    }
+
+    .clean-texture {
+      background-color: #FDFBFC;
+      background-image: radial-gradient(rgba(157, 23, 77, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .glass-nav {
+      background: rgba(253, 251, 252, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .clean-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(235, 214, 224, 0.85);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .clean-card:hover {
+      border-color: rgba(190, 24, 93, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.active {
+      background-color: #BE185D;
+      color: #FFFFFF;
+      border-color: #BE185D;
+    }
+
+    .tab-btn.active {
+      color: #BE185D;
+      border-bottom-color: #BE185D;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.22s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="clean-texture antialiased selection:bg-brand-100 selection:text-brand-700">
+
+  <!-- Cabeçalho -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-rose-200/60">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="flex items-center gap-2.5 focus:outline-none">
+          <span class="w-8 h-8 rounded-lg bg-brand-600 text-white font-semibold text-xs flex items-center justify-center tracking-wide">
+            GB
+          </span>
+          <span class="font-semibold text-plum-900 text-sm sm:text-base tracking-tight">Glória Barboza</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-plum-600" aria-label="Navegação principal">
+          <a href="#sobre" class="hover:text-brand-600 transition-colors">Sobre mim</a>
+          <a href="#trajetoria" class="hover:text-brand-600 transition-colors">Trajetória</a>
+          <a href="#projetos" class="hover:text-brand-600 transition-colors">Cases &amp; Projetos</a>
+          <a href="./curriculo-gloria-barboza.pdf" download class="hover:text-brand-600 transition-colors">Currículo (PDF)</a>
+          <a href="#contato" class="px-4 py-2 rounded-lg bg-plum-900 text-white hover:bg-brand-600 transition-colors">Contato</a>
+        </nav>
+
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="md:hidden p-2 rounded-lg text-plum-600 hover:text-brand-600 transition-colors"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menu de navegação"
+        >
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-rose-200/60 bg-white">
+      <div class="px-5 py-3 space-y-1">
+        <a href="#sobre" class="mobile-nav-link block py-2 text-sm font-medium text-plum-800 hover:text-brand-600">Sobre mim</a>
+        <a href="#trajetoria" class="mobile-nav-link block py-2 text-sm font-medium text-plum-800 hover:text-brand-600">Trajetória</a>
+        <a href="#projetos" class="mobile-nav-link block py-2 text-sm font-medium text-plum-800 hover:text-brand-600">Cases &amp; Projetos</a>
+        <a href="./curriculo-gloria-barboza.pdf" download class="mobile-nav-link block py-2 text-sm font-medium text-plum-800 hover:text-brand-600">Baixar Currículo (PDF)</a>
+        <a href="#contato" class="mobile-nav-link block py-2 text-sm font-semibold text-brand-600">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="pt-16 pb-16 sm:pt-24 sm:pb-24">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-brand-600">
+          Florianópolis, SC · Gestão de Projetos de Tecnologia · Product/Tech Ops · Dados
+        </p>
+
+        <h1 class="mt-4 text-3xl sm:text-5xl font-bold tracking-tight text-plum-900 leading-[1.15] max-w-3xl">
+          Resolvendo problemas complexos em <span class="text-brand-600">tecnologia e dados</span> com autonomia e método.
+        </h1>
+
+        <p class="mt-6 text-base sm:text-lg text-plum-600 leading-relaxed max-w-2xl">
+          Sou Glória Barboza. Combino formação em Engenharia de Software, Data Science &amp; IA e Gestão Estratégica de Projetos (MBA) com prática real de quem organiza cenários difíceis e entrega resultados com as ferramentas disponíveis — com foco em <strong class="font-semibold text-plum-900">Projetos de Tecnologia, Operações de Produto e Dados</strong>.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-3.5">
+          <a href="#projetos" class="px-5 py-2.5 rounded-lg bg-plum-900 hover:bg-brand-600 text-white text-sm font-medium transition-colors">
+            Ver cases e projetos
+          </a>
+          <a href="./curriculo-gloria-barboza.pdf" download class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white border border-rose-200 hover:border-brand-600/40 text-plum-900 text-sm font-medium transition-colors">
+            <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>Baixar Currículo (PDF)</span>
+          </a>
+          <div class="flex items-center gap-5 pl-1 text-sm font-medium text-plum-600">
+            <a href="https://linkedin.com/in/gloriabarboza" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">LinkedIn ↗</a>
+            <a href="https://github.com/labarboza14" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">GitHub ↗</a>
+            <a href="https://thedevconf.com/palestrante/gloriamariabarboza" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">TDC ↗</a>
+          </div>
+        </div>
+
+        <!-- Indicadores reais -->
+        <div class="mt-16 pt-8 border-t border-rose-200/70 grid grid-cols-2 sm:grid-cols-4 gap-8">
+          <div>
+            <p class="text-2xl sm:text-3xl font-bold text-brand-600">2.500</p>
+            <p class="mt-1 text-xs text-plum-600">Reembolsos resolvidos em 7 cidades (Blueticket)</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-bold text-plum-900">2.000+</p>
+            <p class="mt-1 text-xs text-plum-600">Inscrições em pipeline de dados (42% presença)</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-bold text-plum-900">1.300+</p>
+            <p class="mt-1 text-xs text-plum-600">Parceiros em jornada digital (NPS &gt; 80%)</p>
+          </div>
+          <div>
+            <p class="text-2xl sm:text-3xl font-bold text-plum-900">8+</p>
+            <p class="mt-1 text-xs text-plum-600">Palestras e oficinas tech em 2025/2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="py-16 sm:py-24 border-t border-rose-200/60 bg-white/65">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        <div class="grid lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-5">
+            <span class="text-xs font-semibold uppercase tracking-widest text-brand-600">Sobre mim</span>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-plum-900">
+              Iniciativa prática para estruturar projetos, dados e entregas
+            </h2>
+            <div class="mt-5 space-y-4 text-sm sm:text-base text-plum-600 leading-relaxed">
+              <p>
+                Ao longo da minha trajetória, assumi problemas abertos e desestruturados — de forças-tarefa em crise operacional e indicadores de carteira para sócios até pipelines de dados construídos do zero — usando organização, análise técnica e decisão prática para fazer acontecer.
+              </p>
+              <p>
+                Tenho pós-graduação em <strong class="font-semibold text-plum-900">Engenharia de Software (Qualidade)</strong> e em <strong class="font-semibold text-plum-900">Data Science &amp; IA</strong>, e curso <strong class="font-semibold text-plum-900">MBA em Gestão Estratégica de Projetos (UNISUL)</strong>. Atuo de forma voluntária na coorganização da <strong class="font-semibold text-plum-900">Python Floripa</strong> e na 1ª edição no Brasil do <strong class="font-semibold text-plum-900">Programa de Embaixadores Estudantis do Google (2026)</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-8 lg:pt-8">
+            <div class="border-t border-rose-200/80 pt-4">
+              <h3 class="text-sm font-semibold text-plum-900">Projetos &amp; Resolução de Problemas</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-plum-600 leading-relaxed">
+                Diagnóstico de gargalos, definição de escopo, priorização em cenários críticos e coordenação ponta a ponta até a entrega.
+              </p>
+              <p class="mt-2.5 text-xs text-brand-700 font-medium">Scrum (SFC) · Jira · Trello · Playbooks</p>
+            </div>
+
+            <div class="border-t border-rose-200/80 pt-4">
+              <h3 class="text-sm font-semibold text-plum-900">Dados, Automação &amp; LGPD</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-plum-600 leading-relaxed">
+                Pipelines automatizados com anonimização de dados pessoais, indicadores executivos, scripts em Python e painéis públicos.
+              </p>
+              <p class="mt-2.5 text-xs text-brand-700 font-medium">Python · BigQuery · Apps Script · Chart.js</p>
+            </div>
+
+            <div class="border-t border-rose-200/80 pt-4">
+              <h3 class="text-sm font-semibold text-plum-900">Sistemas, Testes &amp; Integrações</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-plum-600 leading-relaxed">
+                Investigação técnica N1/N2, testes em staging, análise de integrações via API, entregabilidade e governança de acessos.
+              </p>
+              <p class="mt-2.5 text-xs text-brand-700 font-medium">GitHub API · AWS Cognito · Django Admin · QA</p>
+            </div>
+
+            <div class="border-t border-rose-200/80 pt-4">
+              <h3 class="text-sm font-semibold text-plum-900">Comunidade, Palestras &amp; IA</h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-plum-600 leading-relaxed">
+                Palestras em eventos técnicos de referência, mediação de painéis e aplicação prática de IA generativa em projetos reais.
+              </p>
+              <p class="mt-2.5 text-xs text-brand-700 font-medium">TDC · Python Floripa · Google Gemini</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trajetória com 3 Abas separadas -->
+        <div id="trajetoria" class="mt-20 pt-12 border-t border-rose-200/60">
+          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 border-b border-rose-200/70">
+            <h3 class="text-xl sm:text-2xl font-bold text-plum-900 pb-3">Trajetória</h3>
+            <div class="flex flex-wrap gap-6" role="tablist" aria-label="Alternar seções da trajetória">
+              <button
+                id="tab-exp"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-exp"
+                class="tab-btn active pb-3 text-sm font-semibold text-plum-600 border-b-2 border-transparent transition-colors"
+              >
+                Experiência
+              </button>
+              <button
+                id="tab-comm"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-comm"
+                class="tab-btn pb-3 text-sm font-semibold text-plum-600 border-b-2 border-transparent transition-colors"
+              >
+                Comunidade &amp; Palestras
+              </button>
+              <button
+                id="tab-edu"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-edu"
+                class="tab-btn pb-3 text-sm font-semibold text-plum-600 border-b-2 border-transparent transition-colors"
+              >
+                Formação
+              </button>
+            </div>
+          </div>
+
+          <!-- Aba 1: Experiência Corporativa -->
+          <div id="panel-exp" role="tabpanel" aria-labelledby="tab-exp" class="mt-8 divide-y divide-rose-200/60 animate-fade-in">
+            <article class="py-5 first:pt-0 grid sm:grid-cols-12 gap-2 sm:gap-6">
+              <div class="sm:col-span-4">
+                <p class="text-xs font-medium text-brand-600">Set 2025 – Atual</p>
+                <h4 class="mt-0.5 font-semibold text-plum-900">JOTA.Info</h4>
+                <p class="text-xs text-plum-600">Suporte Técnico (N1/N2) &amp; Operações de Ferramentas</p>
+              </div>
+              <p class="sm:col-span-8 text-sm text-plum-600 leading-relaxed">
+                Investigações técnicas de níveis 1 e 2, testes em ambiente de staging e diagnóstico de entregabilidade (Mailchimp, SendGrid) e acessos (Backoffice, Django Admin, AWS Cognito, WordPress). Atuação em rotinas de conformidade LGPD, medição mensal de métricas (Jira, Trello, Colab, BigQuery) e gestão do inventário de ferramentas de nuvem, desenvolvimento e IA.
+              </p>
+            </article>
+
+            <article class="py-5 grid sm:grid-cols-12 gap-2 sm:gap-6">
+              <div class="sm:col-span-4">
+                <p class="text-xs font-medium text-plum-400">Nov 2023 – Jul 2025</p>
+                <h4 class="mt-0.5 font-semibold text-plum-900">Redesul / SC Processamentos</h4>
+                <p class="text-xs text-plum-600">Análise de Sistemas, Negócios &amp; Integrações B2B</p>
+              </div>
+              <p class="sm:col-span-8 text-sm text-plum-600 leading-relaxed">
+                Estruturação de playbooks de onboarding (checklist de entendimento e consentimento expresso) e acionamento de seguros, levantamento mensal de indicadores de saúde da carteira (vida, funeral, residencial e assistência) para os sócios e diagnóstico de falhas em integrações via API junto ao time de desenvolvimento.
+              </p>
+            </article>
+
+            <article class="py-5 grid sm:grid-cols-12 gap-2 sm:gap-6">
+              <div class="sm:col-span-4">
+                <p class="text-xs font-medium text-plum-400">Set 2022 – Abr 2023</p>
+                <h4 class="mt-0.5 font-semibold text-plum-900">Foco Radical</h4>
+                <p class="text-xs text-plum-600">Liderança de Onboarding &amp; Experiência do Parceiro</p>
+              </div>
+              <p class="sm:col-span-8 text-sm text-plum-600 leading-relaxed">
+                Estruturação autônoma da jornada de ativação para mais de 1.300 parceiros no Brasil, criação de playbooks para redução de tempo de rampa (NPS &gt; 80%) e consolidação de atritos da plataforma como insumos para o roadmap técnico.
+              </p>
+            </article>
+
+            <article class="py-5 last:pb-0 grid sm:grid-cols-12 gap-2 sm:gap-6">
+              <div class="sm:col-span-4">
+                <p class="text-xs font-medium text-plum-400">Fev 2022 – Jun 2022</p>
+                <h4 class="mt-0.5 font-semibold text-plum-900">Blueticket</h4>
+                <p class="text-xs text-plum-600">Operações &amp; Suporte em Plataforma Transacional</p>
+              </div>
+              <p class="sm:col-span-8 text-sm text-plum-600 leading-relaxed">
+                Atuação na retomada de eventos pós-pandemia em plataforma de alta volumetria, conduzindo com autonomia a força-tarefa de validação e reembolso de 2.500 ingressos em 7 cidades (shows da Marília Mendonça), além de diagnósticos em meios de pagamento.
+              </p>
+            </article>
+          </div>
+
+          <!-- Aba 2: Comunidade, Voluntariado & Palestras -->
+          <div id="panel-comm" role="tabpanel" aria-labelledby="tab-comm" class="mt-8 hidden space-y-8 animate-fade-in">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="border-t border-rose-200/80 pt-4">
+                <p class="text-xs font-semibold text-brand-600">Voluntariado · Liderança Comunitária</p>
+                <h4 class="mt-1 font-semibold text-plum-900">Python Floripa — Coorganizadora</h4>
+                <p class="mt-1.5 text-sm text-plum-600 leading-relaxed">
+                  Atuação voluntária na organização de encontros e parcerias, concepção do pipeline e dashboard público de analytics da comunidade, condução do piloto PyraMentes e mediação do painel comemorativo de 100 edições.
+                </p>
+              </div>
+
+              <div class="border-t border-rose-200/80 pt-4">
+                <p class="text-xs font-semibold text-brand-600">Voluntariado · 1ª Edição no Brasil (2026)</p>
+                <h4 class="mt-1 font-semibold text-plum-900">Programa de Embaixadores Estudantis do Google</h4>
+                <p class="mt-1.5 text-sm text-plum-600 leading-relaxed">
+                  Integrante da primeira turma brasileira do programa, aplicando e compartilhando práticas de Inteligência Artificial (Google Gemini e Workspace) na conexão entre formação acadêmica, projetos reais e mercado.
+                </p>
+              </div>
+            </div>
+
+            <div class="border-t border-rose-200/70 pt-6">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <h4 class="text-sm font-bold text-plum-900">Palestras &amp; Oficinas Realizadas (2025–2026)</h4>
+                <a
+                  href="https://thedevconf.com/palestrante/gloriamariabarboza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors"
+                >
+                  Perfil oficial de palestrante no TDC ↗
+                </a>
+              </div>
+
+              <div class="mt-4 grid sm:grid-cols-2 gap-x-8 gap-y-3 text-xs sm:text-sm text-plum-600">
+                <p><strong class="text-plum-900">The Developer's Conference (TDC)</strong> — Palestrante convidada</p>
+                <p><strong class="text-plum-900">Tech Decision Lab (UDESC Joinville, 2026)</strong> — Oficina de decisão técnica</p>
+                <p><strong class="text-plum-900">FLISOL Porto Alegre (2026)</strong> — A infraestrutura invisível do software livre</p>
+                <p><strong class="text-plum-900">Code Island ctrl+z (2026)</strong> — Era só uma tag... (APIs REST em lote)</p>
+                <p><strong class="text-plum-900">Python Sul &amp; Python Floripa (2026)</strong> — Quem é você na comunidade?</p>
+                <p><strong class="text-plum-900">Python Sul (2025)</strong> — Do Caos ao Código</p>
+                <p><strong class="text-plum-900">Software Freedom Day PoA (2025)</strong> — Python &amp; Open Source</p>
+                <p><strong class="text-plum-900">PyLadies (2025)</strong> — Carreira em dados: o roadmap possível</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aba 3: Formação -->
+          <div id="panel-edu" role="tabpanel" aria-labelledby="tab-edu" class="mt-8 hidden animate-fade-in">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div>
+                <p class="text-xs font-medium text-brand-600">MBA · Em andamento</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Gestão Estratégica de Projetos</h4>
+                <p class="mt-0.5 text-xs text-plum-600">UNISUL</p>
+              </div>
+              <div>
+                <p class="text-xs font-medium text-brand-600">Pós-Graduação</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Engenharia de Software (Qualidade)</h4>
+                <p class="mt-0.5 text-xs text-plum-600">Anhanguera</p>
+              </div>
+              <div>
+                <p class="text-xs font-medium text-brand-600">Pós-Graduação</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Data Science e Inteligência Artificial</h4>
+                <p class="mt-0.5 text-xs text-plum-600">Anhanguera</p>
+              </div>
+              <div>
+                <p class="text-xs font-medium text-plum-400">Graduação</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Tecnólogo em Gestão Pública</h4>
+                <p class="mt-0.5 text-xs text-plum-600">Unipampa</p>
+              </div>
+              <div>
+                <p class="text-xs font-medium text-plum-400">Certificação</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Prompt Engineering for LLMs</h4>
+                <p class="mt-0.5 text-xs text-plum-600">Ada Tech</p>
+              </div>
+              <div>
+                <p class="text-xs font-medium text-plum-400">Certificação</p>
+                <h4 class="mt-1 font-semibold text-plum-900 text-sm">Scrum Fundamentals Certified (SFC)</h4>
+                <p class="mt-0.5 text-xs text-plum-600">SCRUMstudy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Cases & Projetos (6 cards simétricos: 2 fileiras exatas de 3 no desktop) -->
+    <section id="projetos" class="py-16 sm:py-24 border-t border-rose-200/60">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-widest text-brand-600">Portfólio</span>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-plum-900">
+              Cases &amp; projetos realizados
+            </h2>
+          </div>
+
+          <div id="project-filters" class="flex flex-wrap gap-2" role="group" aria-label="Filtrar projetos por categoria">
+            <button type="button" data-filter="todos" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium border border-rose-200 bg-white text-plum-800 hover:border-brand-600/40 transition-colors">
+              Todos
+            </button>
+            <button type="button" data-filter="interno" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium border border-rose-200 bg-white text-plum-800 hover:border-brand-600/40 transition-colors">
+              Cases Corporativos
+            </button>
+            <button type="button" data-filter="dados" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium border border-rose-200 bg-white text-plum-800 hover:border-brand-600/40 transition-colors">
+              Dados &amp; Código
+            </button>
+            <button type="button" data-filter="comunidade" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium border border-rose-200 bg-white text-plum-800 hover:border-brand-600/40 transition-colors">
+              Comunidade &amp; Palestras
+            </button>
+          </div>
+        </div>
+
+        <div id="projects-grid" class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-16 sm:py-24 border-t border-rose-200/60 bg-white/65">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-5">
+            <span class="text-xs font-semibold uppercase tracking-widest text-brand-600">Contato</span>
+            <h2 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-plum-900">
+              Vamos conversar sobre o próximo projeto?
+            </h2>
+            <p class="mt-3 text-sm text-plum-600 leading-relaxed">
+              Aberta a oportunidades e conexões em Gestão de Projetos de Tecnologia, Product/Tech Operations, Dados e palestras em eventos.
+            </p>
+
+            <div class="mt-8 divide-y divide-rose-200/70 border-t border-b border-rose-200/70 text-sm">
+              <div class="py-3.5 flex items-center justify-between gap-3">
+                <div class="min-w-0">
+                  <p class="text-[11px] uppercase tracking-wider text-plum-400">E-mail</p>
+                  <a href="mailto:gloriarbarboza@gmail.com" class="font-medium text-plum-900 hover:text-brand-600 truncate block">
+                    gloriarbarboza@gmail.com
+                  </a>
+                </div>
+                <button
+                  id="copy-email-btn"
+                  type="button"
+                  class="shrink-0 text-xs font-semibold text-brand-600 hover:text-brand-700 px-2.5 py-1.5 rounded-md hover:bg-brand-50 transition-colors"
+                >
+                  Copiar
+                </button>
+              </div>
+
+              <div class="py-3.5 flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-[11px] uppercase tracking-wider text-plum-400">LinkedIn</p>
+                  <a href="https://linkedin.com/in/gloriabarboza" target="_blank" rel="noopener noreferrer" class="font-medium text-plum-900 hover:text-brand-600">
+                    linkedin.com/in/gloriabarboza
+                  </a>
+                </div>
+                <a href="https://linkedin.com/in/gloriabarboza" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700">
+                  Abrir ↗
+                </a>
+              </div>
+
+              <div class="py-3.5 flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-[11px] uppercase tracking-wider text-plum-400">Currículo &amp; Perfis</p>
+                  <div class="flex flex-wrap items-center gap-4 mt-0.5 font-medium text-plum-900">
+                    <a href="./curriculo-gloria-barboza.pdf" download class="text-brand-600 hover:text-brand-700">Currículo PDF ↓</a>
+                    <a href="https://github.com/labarboza14" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600">GitHub ↗</a>
+                    <a href="https://thedevconf.com/palestrante/gloriamariabarboza" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600">TDC ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="clean-card rounded-2xl p-6 sm:p-8 space-y-5" novalidate>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block text-xs font-medium text-plum-800 mb-1.5">Seu nome</label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Ex.: Maria Silva"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-rose-200 text-sm text-plum-900 placeholder:text-plum-400 focus:outline-none focus:border-brand-600 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="contact-topic" class="block text-xs font-medium text-plum-800 mb-1.5">Assunto</label>
+                  <select
+                    id="contact-topic"
+                    name="topic"
+                    class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-rose-200 text-sm text-plum-900 focus:outline-none focus:border-brand-600 transition-colors"
+                  >
+                    <option value="Oportunidade em Tecnologia / Projetos">Oportunidade em Tecnologia / Projetos</option>
+                    <option value="Projeto de Dados ou Produto">Projeto de Dados ou Produto</option>
+                    <option value="Convite para Palestra ou Evento">Convite para Palestra ou Evento</option>
+                    <option value="Parceria Python Floripa">Parceria Python Floripa</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-medium text-plum-800 mb-1.5">Mensagem</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Conte brevemente sobre o projeto, desafio ou oportunidade..."
+                  class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-rose-200 text-sm text-plum-900 placeholder:text-plum-400 focus:outline-none focus:border-brand-600 transition-colors resize-y"
+                ></textarea>
+              </div>
+
+              <p id="form-error" class="hidden text-xs font-medium text-rose-600"></p>
+
+              <div class="flex flex-wrap items-center gap-3">
+                <button
+                  type="submit"
+                  class="px-5 py-2.5 rounded-lg bg-plum-900 hover:bg-brand-600 text-white text-sm font-medium transition-colors"
+                >
+                  Abrir no e-mail
+                </button>
+                <button
+                  id="copy-message-btn"
+                  type="button"
+                  class="px-4 py-2.5 rounded-lg bg-white border border-rose-200 hover:border-brand-600/40 text-plum-800 text-sm font-medium transition-colors"
+                >
+                  Copiar texto
+                </button>
+              </div>
+              <p class="text-[11px] text-plum-400">O botão abre seu aplicativo de e-mail com a mensagem pronta para envio.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="border-t border-rose-200/60 bg-white">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-plum-600">
+      <p>© 2026 Glória Barboza · Florianópolis, SC</p>
+      <div class="flex items-center gap-5">
+        <a href="#inicio" class="hover:text-brand-600 transition-colors">Topo</a>
+        <a href="./curriculo-gloria-barboza.pdf" download class="hover:text-brand-600 transition-colors">Currículo PDF</a>
+        <a href="https://linkedin.com/in/gloriabarboza" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">LinkedIn</a>
+        <a href="https://github.com/labarboza14" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">GitHub</a>
+        <a href="https://thedevconf.com/palestrante/gloriamariabarboza" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 transition-colors">TDC</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Estudo de Caso / Detalhes -->
+  <div
+    id="project-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-plum-900/40 backdrop-blur-sm"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <div class="bg-white rounded-2xl max-w-xl w-full max-h-[86vh] overflow-y-auto shadow-xl border border-rose-200 animate-fade-in">
+      <div class="sticky top-0 bg-white px-6 py-4 border-b border-rose-100 flex items-start justify-between gap-4">
+        <div>
+          <p id="modal-category" class="text-xs font-semibold text-brand-600"></p>
+          <h3 id="modal-title" class="mt-1 text-lg font-bold text-plum-900"></h3>
+        </div>
+        <button
+          id="modal-close-btn"
+          type="button"
+          class="p-1.5 rounded-lg text-plum-400 hover:text-brand-600 transition-colors"
+          aria-label="Fechar detalhes do projeto"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 space-y-5">
+        <p id="modal-description" class="text-sm text-plum-600 leading-relaxed"></p>
+        <div id="modal-diagram" class="hidden rounded-xl bg-brand-50/50 border border-rose-200/70 p-4"></div>
+        <div id="modal-case-study" class="hidden space-y-4 border-t border-rose-100 pt-4"></div>
+        <div id="modal-highlights-wrap" class="border-t border-rose-100 pt-4">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-plum-400 mb-2.5">Destaques</h4>
+          <ul id="modal-highlights" class="space-y-2 text-xs sm:text-sm text-plum-800"></ul>
+        </div>
+        <div class="border-t border-rose-100 pt-4">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-plum-400 mb-2">Competências &amp; Ferramentas</h4>
+          <p id="modal-tags" class="text-xs font-medium text-brand-700"></p>
+        </div>
+        <div class="border-t border-rose-100 pt-4">
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-plum-400 mb-3">Acesso &amp; Evidência</h4>
+          <div id="modal-links" class="flex flex-wrap gap-2.5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div
+    id="toast"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-5 right-5 z-50 hidden items-center gap-2 px-4 py-2.5 rounded-lg bg-plum-900 text-white text-xs font-medium shadow-lg"
+  >
+    <span id="toast-message"></span>
+  </div>
+
+  <script>
+    const PROJECTS = [
+      {
+        id: 'pipeline-python-floripa',
+        title: 'Pipeline & Dashboard Analytics — Python Floripa',
+        category: 'dados',
+        categoryLabel: 'Dados & Código · 2026',
+        metric: '2.000+ inscrições · 42% presença',
+        summary: 'Arquitetura serverless construída do zero para transformar planilhas do Sympla em indicadores públicos anonimizados (LGPD) com custo zero.',
+        fullDescription: 'Projeto independente concebido e desenvolvido para dar previsibilidade de público e transparência aos espaços parceiros que recebem os encontros gratuitos da Python Floripa.',
+        diagramSteps: ['Sympla (.xlsx)', 'Google Drive', 'Sheets + Apps Script (LGPD)', 'GitHub REST API', 'Dashboard Chart.js'],
+        caseStudy: {
+          context: 'Eventos gratuitos sofriam com evasão imprevisível, gerando auditórios ociosos ou superlotados e dificultando a negociação de espaços com empresas parceiras.',
+          planning: 'Desenhei uma solução completa com custo zero de infraestrutura e privacidade desde a origem (LGPD), automatizando da ingestão até a publicação web.',
+          execution: 'Integrei Google Drive (planilhas .xlsx do Sympla), Google Sheets (controle de temas, status e logs), Google Apps Script (limpeza, mascaramento irreversível de e-mails e nomes e cálculo de retenção) e GitHub REST API publicando em GitHub Pages com Chart.js.',
+          impact: 'Mais de 2.000 inscrições processadas, 1.250+ participantes únicos mapeados, taxa média histórica de 42% de presença para dimensionamento exato de lotes e 54% de conversão via canal direto.'
+        },
+        highlights: [],
+        tags: ['Python', 'Google Apps Script', 'ETL', 'LGPD', 'GitHub Pages', 'Chart.js'],
+        primaryLink: {
+          label: 'Acessar Dashboard',
+          url: 'https://labarboza14.github.io/python-floripa-dashboard/'
+        },
+        links: [
+          { label: 'Dashboard ao vivo', url: 'https://labarboza14.github.io/python-floripa-dashboard/', primary: true },
+          { label: 'Repositório GitHub', url: 'https://github.com/labarboza14/python-floripa-dashboard' },
+          { label: 'Documentação Técnica', url: 'https://docs.google.com/document/d/1PR1I6IMhsAgPvCbY0pP2E5ykAtbdqvA-J9tvAvbj7To/edit' },
+          { label: 'Apresentação de Impacto', url: 'https://docs.google.com/presentation/d/1wKnZrEwJztgR5hDQ0byNh60MXSyl1wRHuQor4LIFQ-o/edit' }
+        ]
+      },
+      {
+        id: 'case-redesul-carteira',
+        title: 'Saúde da Carteira de Seguros & Integrações B2B — Redesul',
+        category: 'interno',
+        categoryLabel: 'Case Corporativo · 2023–2025',
+        metric: 'Report mensal aos sócios · 4 ramos + APIs',
+        summary: 'Indicadores mensais de acionamentos (vida, funeral, residencial e assistência) para os sócios, playbooks com consentimento expresso e diagnóstico de integrações via API.',
+        fullDescription: 'Projeto interno conduzido na Redesul / SC Processamentos unindo governança de seguros, reporte mensal de indicadores para os sócios e atuação técnica em integrações B2B junto ao desenvolvimento.',
+        caseStudy: {
+          context: 'A operação de seguros (vida, funeral, residencial e assistência) precisava padronizar onboarding e acionamento, dar visibilidade mensal da saúde da carteira aos sócios e reduzir falhas recorrentes em integrações via API.',
+          planning: 'Organizei duas frentes complementares: padronização de entrada, entendimento do cliente e sinistros para gerar dados confiáveis; e levantamento técnico de evidências em integrações B2B antes de acionar desenvolvimento.',
+          execution: 'Criei playbooks de onboarding (checklist de entendimento e consentimento expresso) e de acionamento, consolidei mensalmente os volumes por cobertura para a diretoria e mapeei gargalos em esteiras de API junto aos desenvolvedores.',
+          impact: 'Os sócios passaram a acompanhar mensalmente a saúde da carteira por modalidade com base confiável, enquanto a operação ganhou rastreabilidade de consentimento, menos erros recorrentes e entregas alinhadas aos contratos.'
+        },
+        highlights: [],
+        tags: ['Indicadores Executivos', 'Saúde da Carteira', 'Playbooks & Consentimento', 'Integrações API'],
+        primaryLink: null,
+        links: []
+      },
+      {
+        id: 'case-foco-radical',
+        title: 'Onboarding & Insumos de Produto — Foco Radical',
+        category: 'interno',
+        categoryLabel: 'Case Corporativo · 2022–2023',
+        metric: '+1.300 parceiros · NPS > 80%',
+        summary: 'Estruturação autônoma de playbooks de ativação para mais de 1.300 parceiros e ponte contínua de melhorias com desenvolvimento.',
+        fullDescription: 'Iniciativa conduzida entre setembro de 2022 e abril de 2023 para reduzir atritos no início do uso da plataforma e transformar demandas recorrentes em melhorias reais de produto.',
+        caseStudy: {
+          context: 'Mais de 1.300 parceiros e produtores em todo o Brasil enfrentavam dúvidas recorrentes em navegação, uploads de mídia, fluxos de compra e repasses financeiros, atrasando o uso autônomo da plataforma.',
+          planning: 'Assumi a organização da jornada de entrada dos parceiros com foco em resolver a causa dos atritos, priorizando casos críticos e criando um canal estruturado de retorno para o time técnico.',
+          execution: 'Criei playbooks de onboarding e materiais de orientação prática, organizei a gestão de fila e qualidade (DeskRio) e consolidei os gargalos recorrentes como insumos objetivos para o roadmap dos desenvolvedores.',
+          impact: 'Ativação e acompanhamento de mais de 1.300 parceiros ativos no país, menor tempo até o uso autônomo e NPS mantido acima de 80%.'
+        },
+        highlights: [],
+        tags: ['Onboarding', 'Playbooks', 'Roadmap de Produto', 'NPS > 80%'],
+        primaryLink: null,
+        links: []
+      },
+      {
+        id: 'case-blueticket',
+        title: 'Força-Tarefa de Reembolso em Escala — Blueticket',
+        category: 'interno',
+        categoryLabel: 'Case Corporativo · 2022',
+        metric: '2.500 reembolsos · 7 cidades',
+        summary: 'Condução autônoma da força-tarefa de busca ativa, validação de ingressos físicos e reembolso em massa na retomada pós-pandemia.',
+        fullDescription: 'Iniciativa conduzida em 2022 na Blueticket para destravar uma demanda crítica e reprimida de shows da cantora Marília Mendonça — impactada primeiro pelo adiamento da pandemia e depois pelo falecimento da artista.',
+        caseStudy: {
+          context: 'Com o cancelamento definitivo dos shows, os reembolsos estavam garantidos, mas bloqueados na prática: grande parte dos ingressos era de papel com quase 3 anos (desgastados ou ilegíveis), havia revendas quando o estorno pertencia ao comprador original, dados desatualizados, cartões inativos e falta de contato.',
+          planning: 'Estruturei sozinha uma frente organizada de busca ativa e validação, priorizando integridade na conferência dos ingressos, respeito à regra do comprador legítimo e canais alternativos para alcançar o público fora das capitais.',
+          execution: 'Realizei estornos diretos em cartão sempre que viável, criei fluxo de validação cruzando fotos dos ingressos físicos com o sistema interno e acionei busca multicanal — SAC, telefone, redes sociais e chamados em rádios locais, especialmente no interior — respeitando também quem optou por guardar o ingresso como recordação.',
+          impact: '2.500 reembolsos concluídos em 7 cidades diferentes sob um cenário excepcional de duplo impacto, garantindo rastreabilidade e encerramento efetivo de uma fila crítica.'
+        },
+        highlights: [],
+        tags: ['Gestão de Crise', 'Validação de Dados', 'Busca Ativa Multicanal', 'Autonomia Operacional'],
+        primaryLink: null,
+        links: []
+      },
+      {
+        id: 'pyramentes-pyramatches',
+        title: 'PyraMentes & PyraMatches — Python Floripa',
+        category: 'dados',
+        categoryLabel: 'Dados & Código · 2025',
+        metric: 'Piloto executado · Python',
+        summary: 'Iniciativa comunitária de mentoria horizontal executada na Python Floripa, apoiada por script de pareamento em Python.',
+        fullDescription: 'Projeto real conduzido na comunidade Python Floripa para conectar mentores e mentorados em tecnologia por afinidade de tema, nível técnico e disponibilidade.',
+        highlights: [
+          'Desenvolvimento do script PyraMatches em Python para automatizar o cruzamento entre mentores e mentorados.',
+          'Execução do ciclo piloto com inscrições, agendamento estruturado e coleta de feedback pós-sessão.',
+          'Documentação de escopo e evolução do modelo de mentoria coletiva para a comunidade.'
+        ],
+        tags: ['Python', 'Algoritmo de Matching', 'Comunidade', 'Mentoria'],
+        primaryLink: {
+          label: 'Ver no GitHub',
+          url: 'https://github.com/labarboza14/pyra_matches'
+        },
+        links: [
+          { label: 'Repositório PyraMatches', url: 'https://github.com/labarboza14/pyra_matches', primary: true },
+          { label: 'Documentação do Projeto', url: 'https://docs.google.com/document/d/1uMMAiMWwM8RKcwKcg3noqojMGxV--KFI2EWlMq25Inw/edit' }
+        ]
+      },
+      {
+        id: 'palestras-tdc-comunidade',
+        title: 'Palestras Tech & Atuação em Comunidades (2025–2026)',
+        category: 'comunidade',
+        categoryLabel: 'Comunidade & Palestras',
+        metric: 'TDC · Python Sul · FLISOL · UDESC',
+        summary: 'Presença ativa em palcos técnicos falando sobre dados, APIs, open source, decisão técnica e sustentabilidade de comunidades.',
+        fullDescription: 'Atuação voluntária como palestrante, mediadora e coorganizadora em conferências e encontros de tecnologia no Sul do Brasil, além da participação na 1ª edição brasileira do Programa de Embaixadores Estudantis do Google (2026).',
+        highlights: [
+          'TDC (The Developer\'s Conference) — Perfil oficial de palestrante.',
+          'Tech Decision Lab (CACiC UDESC Joinville, 2026) — Oficina prática de decisão em tecnologia.',
+          'FLISOL Porto Alegre (2026) — A infraestrutura invisível do software livre e do open source.',
+          'Code Island ctrl+z (2026) — Era só uma tag... (processamento seguro em lote com APIs REST).',
+          'Python Sul (2025 e 2026), Software Freedom Day PoA (2025), PyLadies (2025) e mediação da 100ª edição da Python Floripa.'
+        ],
+        tags: ['TDC', 'Python Floripa', 'Embaixadores Google 2026', 'Oratória Técnica'],
+        primaryLink: {
+          label: 'Ver perfil no TDC',
+          url: 'https://thedevconf.com/palestrante/gloriamariabarboza'
+        },
+        links: [
+          { label: 'Perfil de Palestrante no TDC', url: 'https://thedevconf.com/palestrante/gloriamariabarboza', primary: true },
+          { label: 'Roteiro 100ª Edição Python Floripa', url: 'https://docs.google.com/document/d/1o-Sft16MAxKKkODT96ra2x3xS5cwR3-ViyCiw3H9Wow/edit' }
+        ]
+      }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let activeFilter = 'todos';
+      let toastTimer = null;
+
+      const projectsGrid = document.getElementById('projects-grid');
+      const filterButtons = document.querySelectorAll('#project-filters .filter-btn');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIconOpen = document.getElementById('menu-icon-open');
+      const menuIconClose = document.getElementById('menu-icon-close');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      const tabExp = document.getElementById('tab-exp');
+      const tabComm = document.getElementById('tab-comm');
+      const tabEdu = document.getElementById('tab-edu');
+      const panelExp = document.getElementById('panel-exp');
+      const panelComm = document.getElementById('panel-comm');
+      const panelEdu = document.getElementById('panel-edu');
+
+      const modal = document.getElementById('project-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+      const modalCategory = document.getElementById('modal-category');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      const modalDiagram = document.getElementById('modal-diagram');
+      const modalCaseStudy = document.getElementById('modal-case-study');
+      const modalHighlightsWrap = document.getElementById('modal-highlights-wrap');
+      const modalHighlights = document.getElementById('modal-highlights');
+      const modalTags = document.getElementById('modal-tags');
+      const modalLinks = document.getElementById('modal-links');
+
+      const copyEmailBtn = document.getElementById('copy-email-btn');
+      const copyMessageBtn = document.getElementById('copy-message-btn');
+      const contactForm = document.getElementById('contact-form');
+      const formError = document.getElementById('form-error');
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toast-message');
+
+      function showToast(msg) {
+        toastMessage.textContent = msg;
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+        }, 3000);
+      }
+
+      function copyToClipboard(text, successMsg) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast(successMsg);
+          }).catch(() => {
+            fallbackCopy(text, successMsg);
+          });
+        } else {
+          fallbackCopy(text, successMsg);
+        }
+      }
+
+      function fallbackCopy(text, successMsg) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast(successMsg);
+        } catch (e) {
+          showToast('Não foi possível copiar automaticamente.');
+        }
+        document.body.removeChild(ta);
+      }
+
+      mobileMenuBtn.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', isOpen);
+        menuIconOpen.classList.toggle('hidden', !isOpen);
+        menuIconClose.classList.toggle('hidden', isOpen);
+        mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIconOpen.classList.remove('hidden');
+          menuIconClose.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      const tabs = [
+        { btn: tabExp, panel: panelExp, key: 'exp' },
+        { btn: tabComm, panel: panelComm, key: 'comm' },
+        { btn: tabEdu, panel: panelEdu, key: 'edu' }
+      ];
+
+      function switchTab(selectedKey) {
+        tabs.forEach(({ btn, panel, key }) => {
+          const active = key === selectedKey;
+          btn.classList.toggle('active', active);
+          btn.setAttribute('aria-selected', String(active));
+          panel.classList.toggle('hidden', !active);
+        });
+      }
+
+      tabs.forEach(({ btn, key }) => {
+        btn.addEventListener('click', () => switchTab(key));
+      });
+
+      function renderProjects() {
+        const list = activeFilter === 'todos'
+          ? PROJECTS
+          : PROJECTS.filter((p) => p.category === activeFilter);
+
+        projectsGrid.innerHTML = list.map((project) => {
+          const stackLine = project.tags.slice(0, 3).join(' · ');
+
+          return `
+            <article class="clean-card rounded-2xl p-6 flex flex-col justify-between animate-fade-in">
+              <div>
+                <p class="text-[11px] font-semibold uppercase tracking-wider text-brand-600">
+                  ${project.categoryLabel}
+                </p>
+                <h3 class="mt-2 text-base font-bold text-plum-900 leading-snug">
+                  ${project.title}
+                </h3>
+                <p class="mt-2 text-xs sm:text-sm text-plum-600 leading-relaxed">
+                  ${project.summary}
+                </p>
+                <p class="mt-4 text-[11px] font-medium text-plum-400">
+                  ${stackLine}
+                </p>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-rose-100 flex items-center justify-between gap-2 text-xs font-semibold">
+                ${project.primaryLink ? `
+                  <a
+                    href="${project.primaryLink.url}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-brand-600 hover:text-brand-700 transition-colors"
+                  >
+                    ${project.primaryLink.label} ↗
+                  </a>
+                  <button
+                    type="button"
+                    data-project-id="${project.id}"
+                    class="open-modal-btn text-plum-600 hover:text-plum-900 transition-colors"
+                  >
+                    ${project.caseStudy ? 'Estudo de caso' : 'Detalhes'}
+                  </button>
+                ` : `
+                  <button
+                    type="button"
+                    data-project-id="${project.id}"
+                    class="open-modal-btn text-brand-600 hover:text-brand-700 transition-colors"
+                  >
+                    Ler estudo de caso →
+                  </button>
+                  <span class="text-[11px] font-medium text-plum-400">Projeto interno</span>
+                `}
+              </div>
+            </article>
+          `;
+        }).join('');
+      }
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          activeFilter = btn.dataset.filter;
+          filterButtons.forEach((b) => b.classList.toggle('active', b === btn));
+          renderProjects();
+        });
+      });
+
+      projectsGrid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.open-modal-btn');
+        if (!btn) return;
+        const project = PROJECTS.find((p) => p.id === btn.dataset.projectId);
+        if (!project) return;
+        openModal(project);
+      });
+
+      function openModal(project) {
+        modalCategory.textContent = `${project.categoryLabel} · ${project.metric}`;
+        modalTitle.textContent = project.title;
+        modalDescription.textContent = project.fullDescription;
+
+        if (project.diagramSteps && project.diagramSteps.length > 0) {
+          modalDiagram.innerHTML = `
+            <p class="text-[11px] font-semibold uppercase tracking-wider text-brand-700 mb-2.5">Fluxo da Arquitetura</p>
+            <div class="flex flex-wrap items-center gap-1.5 text-xs font-medium text-plum-900">
+              ${project.diagramSteps.map((step, i) => `
+                <span class="px-2.5 py-1 rounded-md bg-white border border-rose-200">${step}</span>
+                ${i < project.diagramSteps.length - 1 ? '<span class="text-brand-600 font-bold">→</span>' : ''}
+              `).join('')}
+            </div>
+          `;
+          modalDiagram.classList.remove('hidden');
+        } else {
+          modalDiagram.classList.add('hidden');
+        }
+
+        if (project.caseStudy) {
+          modalCaseStudy.innerHTML = `
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-600">1. Contexto e desafio</h4>
+              <p class="mt-1 text-xs sm:text-sm text-plum-800 leading-relaxed">${project.caseStudy.context}</p>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-600">2. Decisão e planejamento</h4>
+              <p class="mt-1 text-xs sm:text-sm text-plum-800 leading-relaxed">${project.caseStudy.planning}</p>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-600">3. Execução</h4>
+              <p class="mt-1 text-xs sm:text-sm text-plum-800 leading-relaxed">${project.caseStudy.execution}</p>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-600">4. Resultado</h4>
+              <p class="mt-1 text-xs sm:text-sm text-plum-800 leading-relaxed">${project.caseStudy.impact}</p>
+            </div>
+          `;
+          modalCaseStudy.classList.remove('hidden');
+          modalHighlightsWrap.classList.add('hidden');
+        } else {
+          modalCaseStudy.classList.add('hidden');
+          modalHighlightsWrap.classList.remove('hidden');
+          modalHighlights.innerHTML = project.highlights.map((item) =>
+            `<li class="flex items-start gap-2"><span class="text-brand-600">•</span><span>${item}</span></li>`
+          ).join('');
+        }
+
+        modalTags.textContent = project.tags.join(' · ');
+        if (project.links && project.links.length > 0) {
+          modalLinks.innerHTML = project.links.map((link) => {
+            const cls = link.primary
+              ? 'bg-plum-900 hover:bg-brand-600 text-white'
+              : 'bg-white border border-rose-200 hover:border-brand-600/40 text-plum-800';
+            return `
+              <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg text-xs font-medium transition-colors ${cls}">
+                ${link.label} ↗
+              </a>
+            `;
+          }).join('');
+        } else {
+          modalLinks.innerHTML = `<p class="text-xs text-plum-600">Iniciativa interna corporativa — apresentada em formato de estudo de caso com preservação de dados confidenciais.</p>`;
+        }
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      modalCloseBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      copyEmailBtn.addEventListener('click', () => {
+        copyToClipboard('gloriarbarboza@gmail.com', 'E-mail copiado: gloriarbarboza@gmail.com');
+      });
+
+      function getFormPayload() {
+        const name = document.getElementById('contact-name').value.trim();
+        const topic = document.getElementById('contact-topic').value;
+        const message = document.getElementById('contact-message').value.trim();
+        if (!name || !message) {
+          formError.textContent = 'Por favor, preencha seu nome e sua mensagem antes de continuar.';
+          formError.classList.remove('hidden');
+          return null;
+        }
+        formError.classList.add('hidden');
+        return { name, topic, message };
+      }
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const payload = getFormPayload();
+        if (!payload) return;
+        const subject = encodeURIComponent(`[Portfólio] ${payload.topic} — ${payload.name}`);
+        const body = encodeURIComponent(`Olá, Glória!\n\n${payload.message}\n\nAtenciosamente,\n${payload.name}`);
+        window.location.href = `mailto:gloriarbarboza@gmail.com?subject=${subject}&body=${body}`;
+        showToast('Abrindo seu aplicativo de e-mail.');
+      });
+
+      copyMessageBtn.addEventListener('click', () => {
+        const payload = getFormPayload();
+        if (!payload) return;
+        const formatted = `Assunto: ${payload.topic}\n\nOlá, Glória!\n\n${payload.message}\n\nAtenciosamente,\n${payload.name}`;
+        copyToClipboard(formatted, 'Mensagem copiada para a área de transferência.');
+      });
+
+      renderProjects();
+    });
+  </script>
+</body>
+</html>
