@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Após ativar o GitHub Pages, troque "portfolio" pelo nome exato do seu repositório se for diferente:
-Sitemap: https://labarboza14.github.io/portfolio/sitemap.xml
+Sitemap: https://labarboza14/Portfolio-Profissional-Gloria-Barboza/sitemap.xml
