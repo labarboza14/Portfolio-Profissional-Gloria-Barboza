@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <!-- Troque "portfolio" pelo nome exato do seu repositório no GitHub Pages, se for diferente -->
-    <loc>https://labarboza14.github.io/Portfolio-Profissional-Gloria-Barboza/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://labarboza14.github.io/portfolio-gloria/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 </urlset>
