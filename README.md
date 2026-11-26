@@ -2,7 +2,7 @@
 
 Vitrine digital criada para apresentar minha trajetória em **Tecnologia, Projetos e Dados**, reunindo cases reais conduzidos com autonomia, projetos abertos em Python e minha atuação voluntária na **Python Floripa**, em palestras técnicas (**[TDC](https://thedevconf.com/palestrante/gloriamariabarboza)**, Python Sul, FLISOL, UDESC) e na **1ª edição brasileira do Programa de Embaixadores Estudantis do Google (2026)**.
 
-> **Hospedagem gratuita (GitHub Pages):** ative o GitHub Pages na branch `main` (`/root`) para publicar em `https://labarboza14.github.io/<nome-do-repo>/`. Para evitar conteúdo duplicado nas buscas, mantenha publicado em um único endereço oficial.
+> **Hospedagem gratuita (GitHub Pages):** ative o GitHub Pages na branch `main` (`/root`) para publicar em `https://labarboza14.github.io/Portfolio-Profissional-Gloria-Barboza/`. Para evitar conteúdo duplicado nas buscas, mantenha publicado em um único endereço oficial.
 
 ## Contexto & Evidência de Projeto
 
@@ -52,4 +52,4 @@ portfolio-gloria-barboza/
 ## Autora & Contato
 
 **Glória Barboza** — Florianópolis, SC  
-[LinkedIn](https://linkedin.com/in/gloriabarboza) · [GitHub](https://github.com/labarboza14) · [Palestrante TDC](https://thedevconf.com/palestrante/gloriamariabarboza) · gloriarbarboza@gmail.com
+[LinkedIn](https://linkedin.com/in/labarboza14) · [GitHub](https://github.com/labarboza14) · [Palestrante TDC](https://thedevconf.com/palestrante/gloriamariabarboza) · gloriarbarboza@gmail.com
